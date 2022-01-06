@@ -1,7 +1,7 @@
 import React from "react";
-import TrekIcon from "react-icons/lib/md/terrain";
-import TropicIcon from "react-icons/lib/md/wb-sunny";
-import ClubIcon from "react-icons/lib/fa/beer";
+import { GiHiking } from "react-icons/gi";
+import { FaWalking } from "react-icons/fa";
+import { SiClubhouse } from "react-icons/si";
 
 
 const getProgress = (total, goal) => {
@@ -20,15 +20,15 @@ export const TripsCount = ({ total, tropic, trek, club, goal = 15 }) => (
       </div>
       <div className="tropic">
         <h3>{tropic}</h3>
-        <TropicIcon />
+        <GiHiking />
       </div>
       <div className="trek">
         <h3>{trek}</h3>
-        <TrekIcon />
+        <FaWalking />
       </div>
       <div className="club">
         <h3>{club}</h3>
-        <ClubIcon />
+        <SiClubhouse />
       </div>
       <div className="goal">
         <div

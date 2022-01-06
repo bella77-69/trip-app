@@ -5,7 +5,9 @@ import Nav from "./components/Nav";
 import { TripsCount } from "./components/trips/TripsCount";
 import { AddTrip } from "./components/trips/AddTrip";
 import { TripsList } from "./components/trips/TripsList";
-import { Error404 } from "./components/Error404"
+import { Error404 } from "./components/Error404";
+
+import "./styles/index.scss";
 
 class App extends React.Component {
   constructor(props) {
@@ -13,18 +15,18 @@ class App extends React.Component {
     this.state = {
       allTrips: [
         {
-          place: "Manali",
-          date: "2017-01-01",
+          place: "Grouse Grind Trail",
+          date: "2022-01-01",
           type: "Trek",
         },
         {
-          place: "Mumbai",
-          date: "2017-04-05",
+          place: "Burke Mountain Boot Camp",
+          date: "2021-09-05",
           type: "Club",
         },
         {
-          place: "Marina",
-          date: "2017-02-09",
+          place: "Maldives",
+          date: "2021-10-01",
           type: "Tropic",
         },
       ],
