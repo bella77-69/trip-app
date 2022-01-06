@@ -1,0 +1,48 @@
+@import '../../styles/mixins';
+
+.list {
+    flex: auto;
+    @include flex(column);
+    color: white;
+    font-size: 1.25rem;
+
+    &-title {
+    margin-top: 0;
+    color: rgb(10, 10, 10);
+    }
+
+    &-table {
+    width: 400px;
+    text-align: left;
+    }
+    &-th {
+    border-bottom: .125rem solid rgb(179, 176, 176);
+    // width: 55%;
+    }
+
+    &-filters {
+    font-size: 1rem;
+    margin-top: 2em;
+    }
+
+    &-all {
+    @extend %hoverlink;
+    margin: 0.5em;
+    }
+
+    &-trek {
+    @extend %hoverlink;
+    margin: 0.5em;
+    }
+
+    &-club {
+    @extend %hoverlink;
+    margin: 0.5em;
+    }
+
+    &-tropic {
+    @extend %hoverlink;
+    margin: 0.5em;
+    }
+   
+}

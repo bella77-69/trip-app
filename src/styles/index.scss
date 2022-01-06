@@ -178,17 +178,17 @@ h3 {
 .route-container {
     display: flex;
 
-    .nav {
-        height: 100vh;
-        width: 64px;
-        @include flex(column);        
+    // .nav {
+    //     height: 100vh;
+    //     width: 64px;
+    //     @include flex(column);        
 
-        a {
-            @extend %hoverlink;
-            font-size: 28px;
-            padding-bottom: 1em;            
-        }
-    }
+    //     a {
+    //         @extend %hoverlink;
+    //         font-size: 28px;
+    //         padding-bottom: 1em;            
+    //     }
+    // }
 
     .trips-count {
         flex: auto;
@@ -289,34 +289,34 @@ h3 {
         }
     }
 
-    .trips-list {
-        flex: auto;
-        @include flex(column);
-        color: white;
-        font-size: 20px;
+    // .trips-list {
+    //     flex: auto;
+    //     @include flex(column);
+    //     color: white;
+    //     font-size: 20px;
 
-        h3 {
-            margin-top: 0;
-        }
+    //     h3 {
+    //         margin-top: 0;
+    //     }
 
-        .table {
-            width: 400px;
-            text-align: left;
+    //     .table {
+    //         width: 400px;
+    //         text-align: left;
 
-            th {
-                border-bottom: 2px solid lightgrey;
-            }
-        }
+    //         th {
+    //             border-bottom: 2px solid lightgrey;
+    //         }
+    //     }
 
-        .filters {
-            font-size: 14px;
-            margin-top: 2em;
-            a {
-                @extend %hoverlink;
-                margin: 0.5em;
-            }
-        }
-    }
+    //     .filters {
+    //         font-size: 14px;
+    //         margin-top: 2em;
+    //         a {
+    //             @extend %hoverlink;
+    //             margin: 0.5em;
+    //         }
+    //     }
+    // }
 
     .no-page {
         @include flex();

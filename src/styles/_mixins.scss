@@ -1,0 +1,15 @@
+@mixin flex($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
+
+
+%hoverlink {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    &:hover {
+        color: white;
+    }
+}

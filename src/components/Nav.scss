@@ -1,0 +1,28 @@
+@import '../styles/_mixins';
+
+.nav {
+    height: 100vh;
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    // @include flex(column);   
+
+    &-home {
+        @extend %hoverlink;
+        font-size: 28px;
+        padding-bottom: 1em;            
+
+    }
+
+    &-add {
+        @extend %hoverlink;
+        font-size: 28px;
+        padding-bottom: 1em;            
+    }
+
+    &-list {
+        @extend %hoverlink;
+        font-size: 28px;
+        padding-bottom: 1em;            
+    }
+}
