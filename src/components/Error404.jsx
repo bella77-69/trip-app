@@ -1,12 +1,7 @@
-import React from 'react';
+import React from "react";
 
-
-export default class Error404 extends React.Component {
-    render() {
-        return (
-            <div className='no-page'>Nothing Here
-                
-            </div>
-        );
-    }
+export class Error404 extends React.Component {
+  render() {
+    return <div class="no-page">Nothing here</div>;
+  }
 }
