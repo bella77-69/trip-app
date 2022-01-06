@@ -1,10 +1,11 @@
 import React from "react";
 
-
-export const Trip = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+export default function Trip ({ date, place, type }) {
+  return (
+    <tr>
+      <td>{date}</td>
+      <td>{place}</td>
+      <td>{type}</td>
+    </tr>
+  );
 };
