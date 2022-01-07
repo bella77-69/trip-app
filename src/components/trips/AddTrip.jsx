@@ -1,4 +1,5 @@
 import React from "react";
+import './AddTrip.scss';
 
 export const AddTrip = ({ newTrip }) => {
   let date, place, type;
@@ -13,33 +14,33 @@ export const AddTrip = ({ newTrip }) => {
   };
 
   return (
-    <div className="form-container">
-      <form onSubmit={submit} className="form black-container">
+    <div className="form">
+      <form onSubmit={submit} className="form-container">
         <label>
-          <h3>Add A Trip</h3>
+          <h3 className="form-title">Add A Trip</h3>
           <br />
           <br />
           <br />
         </label>
-        <label>
+        <label className="form-label">
           Date: <br />
-          <input
+          <input className="form-input"
             id="date"
             type="date"
             required
             ref={(input) => (date = input)}
           />
         </label>
-        <label>
+        <label className="form-label">
           Place: <br />
-          <input
+          <input className="form-input"
             id="date"
             type="text"
             required
             ref={(input) => (place = input)}
           />
         </label>
-        <label>
+        <label className="form-label">
           Type: <br />
           <select ref={(input) => (type = input)}>
             <option value="Trek">Trek</option>
@@ -47,7 +48,7 @@ export const AddTrip = ({ newTrip }) => {
             <option value="Club">Club</option>
           </select>
         </label>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" className="form-submit"/>
       </form>
     </div>
   );

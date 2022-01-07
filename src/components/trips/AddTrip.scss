@@ -1,0 +1,59 @@
+@import '../../styles/mixins';
+
+ .form {
+        flex: auto;
+        @include flex(column);
+        margin-top: -7rem;
+        
+
+        &-title {
+        color: rgb(8, 8, 8);
+        }
+
+        &-label {
+        color: rgb(44, 43, 43);
+        }
+
+        &-container {
+        @include flex(column);
+        width: 320px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        background: transparent;
+        box-sizing: border-box; 
+
+        }
+      
+        &-input[type=text], input[type=date],
+        select {
+        width: 320px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 3px solid rgb(170, 167, 167);
+        color: rgb(29, 28, 28);
+        background: transparent;
+        box-sizing: border-box;
+
+        &:focus {
+        border-color: white;
+        }
+        }
+
+        &-input[type=submit] {
+        border: 3px solid lightgrey;
+        background: transparent;
+        color: white;
+        padding: 14px 20px;
+        margin: 2em 0;
+        cursor: pointer;
+        align-self: right;
+        
+        :hover {
+        border-color: white;
+        background-color: white;
+        color: grey;
+        }
+        }
+    
+    }

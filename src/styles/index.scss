@@ -1,3 +1,4 @@
+@import '../styles/mixins';
 .route-container .nav a, .route-container .trips-list .filters a {
     text-decoration: none;
     color: #f0f0f0; }
@@ -10,18 +11,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    padding: 0; }
+    padding: 0; 
+  }
   
-  h1, h3 {
-    display: inline;
-    font-weight: normal;
-    color: white; }
-  
-  h1 {
-    font-size: 96px; }
-  
-  h3 {
-    font-size: 48px; }
   
   .route-container {
     display: flex; }
@@ -70,22 +62,18 @@
             margin: 0.5em;
             background-color: #f0f0f0;
             display: inline-block; }
-    .route-container .form-container {
-      flex: auto;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center; }
-      .route-container .form-container .form {
+
+   
+      .route-container .form-container  {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         color: white; }
-        .route-container .form-container .form label {
+        .route-container .form-container {
           width: 320px; }
-        .route-container .form-container .form input[type=text], .route-container .form-container .form input[type=date],
-        .route-container .form-container .form select {
+        .route-container .form-container .route-container .form-container
+        .route-container .form-container  {
           width: 320px;
           padding: 12px 20px;
           margin: 8px 0;
@@ -94,21 +82,18 @@
           color: white;
           background: transparent;
           box-sizing: border-box; }
-          .route-container .form-container .form input[type=text]:focus, .route-container .form-container .form input[type=date]:focus,
-          .route-container .form-container .form select:focus {
+          .route-container .form-container .route-container .form-container .form input[type=date]:focus,
+          .route-container .form-container  {
             border-color: white; }
-        .route-container .form-container .form input[type=submit] {
-          border: 3px solid lightgrey;
-          background: transparent;
-          color: white;
-          padding: 14px 20px;
-          margin: 2em 0;
-          cursor: pointer;
-          align-self: right; }
-        .route-container .form-container .form input[type=submit]:hover {
-          border-color: white;
-          background-color: white;
-          color: grey; }
+        // .route-container  {
+     
+        //   background: transparent;
+        //   color: white;
+        //   padding: 14px 20px;
+        //   margin: 2em 0;
+        //   cursor: pointer;
+        //   align-self: right; }
+     
     .route-container .trips-list {
       flex: auto;
       display: flex;
@@ -117,7 +102,7 @@
       justify-content: center;
       color: white;
       font-size: 20px; }
-      .route-container .trips-list h3 {
+      .route-container .trips-list  {
         margin-top: 0; }
       .route-container .trips-list .table {
         width: 400px;
@@ -137,20 +122,20 @@
       color: white;
       font-size: 40px; }
       
-@mixin flex($direction: row) {
-    display: flex;
-    flex-direction: $direction;
-    align-items: center;
-    justify-content: center;
-}
+// @mixin flex($direction: row) {
+//     display: flex;
+//     flex-direction: $direction;
+//     align-items: center;
+//     justify-content: center;
+// }
 
-%hoverlink {
-    text-decoration: none;
-    color: rgb(240, 240, 240);
-    &:hover {
-        color: white;
-    }
-}
+// %hoverlink {
+//     text-decoration: none;
+//     color: rgb(240, 240, 240);
+//     &:hover {
+//         color: white;
+//     }
+// }
 
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -175,8 +160,9 @@ h3 {
     font-size: 48px;
 }
 
-.route-container {
-    display: flex;
+// .route-container {
+//     display: flex;
+//     flex-direction: column;
 
     // .nav {
     //     height: 100vh;
@@ -243,51 +229,51 @@ h3 {
         }
     }
 
-    .form-container {
-        flex: auto;
-        @include flex();
+    // .form-container {
+    //     flex: auto;
+    //     @include flex();
         
-        .form {
-            @include flex(column);
-            color: white;
+    //     .form {
+    //         @include flex(column);
+    //         color: white;
 
-            label {
-                width: 320px;
-            }
+    //         label {
+    //             width: 320px;
+    //         }
 
-            input[type=text], input[type=date],
-            select {
-                width: 320px;
-                padding: 12px 20px;
-                margin: 8px 0;
-                display: inline-block;
-                border: 3px solid lightgrey;
-                color: white;
-                background: transparent;
-                box-sizing: border-box;
+    //         input[type=text], input[type=date],
+    //         select {
+    //             width: 320px;
+    //             padding: 12px 20px;
+    //             margin: 8px 0;
+    //             display: inline-block;
+    //             border: 3px solid lightgrey;
+    //             color: white;
+    //             background: transparent;
+    //             box-sizing: border-box;
 
-                &:focus {
-                    border-color: white;
-                }
-            }
+    //             &:focus {
+    //                 border-color: white;
+    //             }
+    //         }
 
-            input[type=submit] {
-                border: 3px solid lightgrey;
-                background: transparent;
-                color: white;
-                padding: 14px 20px;
-                margin: 2em 0;
-                cursor: pointer;
-                align-self: right;
-            }
+    //         input[type=submit] {
+    //             border: 3px solid lightgrey;
+    //             background: transparent;
+    //             color: white;
+    //             padding: 14px 20px;
+    //             margin: 2em 0;
+    //             cursor: pointer;
+    //             align-self: right;
+    //         }
 
-            input[type=submit]:hover {
-                border-color: white;
-                background-color: white;
-                color: grey;
-            }
-        }
-    }
+    //         input[type=submit]:hover {
+    //             border-color: white;
+    //             background-color: white;
+    //             color: grey;
+    //         }
+    //     }
+    // }
 
     // .trips-list {
     //     flex: auto;
@@ -324,4 +310,3 @@ h3 {
         font-size: 40px;
     }
 
-}
